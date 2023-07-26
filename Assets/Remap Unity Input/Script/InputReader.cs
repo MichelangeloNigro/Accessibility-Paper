@@ -76,7 +76,6 @@ public class InputReader : MonoBehaviour
             keyCodeData = JsonUtility.FromJson<KeyCodeData>(json);
             Debug.Log("KeyCode data loaded from JSON.");
         }
-        UpdateKeyActions();
     }
 
 

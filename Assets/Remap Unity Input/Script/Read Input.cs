@@ -62,7 +62,6 @@ public class ReadInput : MonoBehaviour
                 if (field != null)
                 {
                     field.SetValue(reader.keyCodeData, keyCode);
-                    reader.UpdateKeyActions();
                     var t = button.GetComponentInChildren<TMP_Text>();
                     Debug.Log($"{t.text} was remapped to {keyCode}");
                 }
