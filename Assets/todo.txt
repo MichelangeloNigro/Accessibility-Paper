@@ -1,4 +1,4 @@
-﻿sottotitoli
+﻿sottotitoli da nadia?
 
 salvataggio preferenze
 
@@ -7,10 +7,15 @@ deuteranopia, che limita la percezione del verde (alla vista apparirà più ross
 protanopia, che limita la percezione del rosso (alla vista apparirà più verde);
 tritanopia, che limita la percezione del blu-giallo. Meno frequente, rende difficile distinguere blu e verde e giallo e rosso.
 
+super importante!!!!!!
+
 contro aracnofobia?
 
 text to speach 
 
-indicazioni audio
+indicazioni audio 
 
-scale ui
+scale ui da fare con testo
+
+
+translation renpy
