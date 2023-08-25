@@ -1,14 +1,4 @@
-﻿sottotitoli da nadia?
-
-salvataggio preferenze
-
-shader daltonismo
-deuteranopia, che limita la percezione del verde (alla vista apparirà più rosso);
-protanopia, che limita la percezione del rosso (alla vista apparirà più verde);
-tritanopia, che limita la percezione del blu-giallo. Meno frequente, rende difficile distinguere blu e verde e giallo e rosso.
-
-super importante!!!!!!
-
+﻿
 contro aracnofobia?
 
 text to speach 
@@ -16,6 +6,5 @@ text to speach
 indicazioni audio 
 
 scale ui da fare con testo
-
 
 translation renpy

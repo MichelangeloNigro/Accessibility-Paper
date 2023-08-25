@@ -764,6 +764,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   txts:
     wrap: []
+  maxSize: 50
 --- !u!114 &1443743763
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -778,6 +779,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   texts: []
   dislexycAsste: {fileID: 11400000, guid: 101de79e52f75c7429cb73309b63f2c5, type: 2}
+  defaultAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
 --- !u!4 &1443743764
 Transform:
   m_ObjectHideFlags: 0

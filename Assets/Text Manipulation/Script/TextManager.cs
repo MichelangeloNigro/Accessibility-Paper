@@ -9,6 +9,7 @@ using UnityEngine.UI;
 
 public class TextManager : SingletonDDOL<TextManager> {
     public wrapperTXT txts;
+    public int maxSize;
 
     private void OnApplicationQuit() {
         UpdateList();
@@ -26,14 +27,17 @@ public class TextManager : SingletonDDOL<TextManager> {
     private void UpdateTextsList() {
         foreach (var text in FindObjectsOfType<TMP_Text>()) {
             var existingTxt = txts.wrap.Find(txt => txt.name == text.name);
-        
+        Debug.Log(text.font);
             if (existingTxt != null) {
                 existingTxt.size = text.fontSize;
+                existingTxt.dyslexicOn = text.font == TextFinder.Instance.dislexycAsste;
             } else {
                 var t = new txtsSize {
                     size = text.fontSize,
-                    name = text.name
-                };
+                    name = text.name,
+                    dyslexicOn = text.font == TextFinder.Instance.dislexycAsste
+               
+            };
                 txts.wrap.Add(t);
             }
         }
@@ -50,6 +54,10 @@ public class TextManager : SingletonDDOL<TextManager> {
                 foreach (var tmpText in FindObjectsOfType<TMP_Text>()) {
                     if (tmpText.name == txt.name) {
                         tmpText.fontSize = txt.size;
+                        if (txt.dyslexicOn == true)
+                        {
+                            tmpText.font = TextFinder.Instance.dislexycAsste;
+                        }
                     }
                 }
             }
@@ -62,7 +70,7 @@ public class TextManager : SingletonDDOL<TextManager> {
     }
 
     public void ChangeSize(float val) {
-        float tmp = math.remap(0, 1, 0, 50, val);
+        float tmp = math.remap(0, 1, 0, maxSize, val);
         foreach (var text in TextFinder.Instance.texts) {
             text.fontSize = tmp;
         }
@@ -70,10 +78,12 @@ public class TextManager : SingletonDDOL<TextManager> {
     }
 }
 
+
 [System.Serializable]
 public class txtsSize {
     public float size;
     public string name;
+    public bool dyslexicOn=false;
 }
 
 [System.Serializable]
